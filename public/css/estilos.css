@@ -1,0 +1,73 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del contenedor de la página de error */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos del encabezado y pie de página */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+}
+
+/* Estilos específicos para la página de error */
+.error-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.error-content p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.error-content button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-content button:hover {
+    background-color: #ff9900;
+}
+
+.island img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
