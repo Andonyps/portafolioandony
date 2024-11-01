@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>{{titulo}} {{nombre}}</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
+    {{> header }} <!-- Incluir el header -->
+   <div class="container">
+        <input type="checkbox" id="checkbox">
+        <label class="label" for="checkbox"></label>
+    </div>
+
     
+
+    {{> menu }} <!-- Incluir el menú -->
+
+
+    <main>
+        <!-- Bienvenida -->
+        <section class="profile">
+            <img src="./imagenes/yo.jpg" alt="Foto de Brenton Andony" class="profile-photo">
+        </section>
+
+        <section class="intro">
+            <h1>¡Bienvenido!</h1>
+            <p>Mi nombre es Brenton Andony Manuel Par Sohon</p>
+            <p>Estudiante de Ingeniería en Sistemas de Información y Ciencias de la Computación</p>
+        </section>
+
+        <!-- Foto de Perfil -->
+        
+
+        <!-- Habilidades -->
+        <section class="skills">
+           
+        
+        <section id="habilidades" class="info-detail">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+        <div class="skill-bar">
+            <p>HTML</p>
+            <div class="bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>CSS</p>
+            <div class="bar">
+                <div class="progress" style="width: 70%;">70%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>JavaScript</p>
+            <div class="bar">
+                <div class="progress" style="width: 30%;">60%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>Python</p>
+            <div class="bar">
+                <div class="progress" style="width: 45%;">45%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>Java</p>
+            <div class="bar">
+                <div class="progress" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>SQL</p>
+            <div class="bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>Git</p>
+            <div class="bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>React</p>
+            <div class="bar">
+                <div class="progress" style="width: 10%;">10%</div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <p>Node.js</p>
+            <div class="bar">
+                <div class="progress" style="width: 10%;">50%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section class="experience">
+            <h2>Experiencia Laboral</h2>
+            <div class="job">
+                <h3>Soporte area informatica</h3>
+                <p>Fondos de America R.L</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li>Diseño y desarrollo de sitios y aplicaciones web</li>
+                    <li>Supervision de bases de datos</li>
+                    <li>Cableado Estructurado</li>
+                    <li>Realizar tareas de mantenimiento preventivo, como actualizaciones de software y hardware.</li>
+                    <!-- Más detalles aquí -->
+                </ul>
+                <p>Duración: Noviembre 2022 - Abril 2024</p>
+            </div>
+            <!-- Agrega más experiencias si las tienes -->
+        </section>
+        <section class="experience">
+            <div class="job">
+                <h3>Encargado area de informatica</h3>
+                <p>Fondos de America R.L</p>
+                <p>Responsabilidades:</p>
+                <ul>
+                    <li>Diseño y desarrollo de soluciones tecnologicas a traves de hardware y software</li>
+                    <li>Supervision y mantenimiento de bases de datos</li>
+                    <li>Coordinacion de trabajo en area</li>
+                    <li>Administracion de la red de la cooperativa</li>
+                    <li>Administracion de los Servidores locales de la cooperativa</li>
+                    <li>Generar reporteria para las distintas areas</li>
+                    <li>Capacitar al personal sobre uso de software y hardware empleado en la cooperativa</li>
+                    <!-- Más detalles aquí -->
+                </ul>
+                <p>Duración: Mayo 2024 - Actualidad</p>
+            </div>
+            <!-- Agrega más experiencias si las tienes -->
+        </section>
+    </main>
+
+    {{> footer }} <!-- Incluir el footer -->
+    <script src="/js/menu.js"></script>
+    <script>
+    const checkbox = document.getElementById('checkbox');
+
+    checkbox.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode', checkbox.checked);
+    });
+</script>
+
 </body>
 </html>
