@@ -28,6 +28,55 @@ app.get('/proyectos', (req, res) =>{
     });
 })
 
+app.get('/proyecto1', (req, res) =>{
+    res.render('proyecto1',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto2', (req, res) =>{
+    res.render('proyecto2',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto3', (req, res) =>{
+    res.render('proyecto3',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto4', (req, res) =>{
+    res.render('proyecto4',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto5', (req, res) =>{
+    res.render('proyecto5',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto6', (req, res) =>{
+    res.render('proyecto6',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto7', (req, res) =>{
+    res.render('proyecto7',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+app.get('/proyecto8', (req, res) =>{
+    res.render('proyecto8',{
+        nombre: 'Brenton Andony', // Envía el nombre al template
+        titulo: 'Portafolio' // Envía el título al template
+    });
+})
+
 // Ruta de error 404
 app.get('*', (req, res) => {
     res.status(404).render('404'); // Renderiza la vista 404.hbs para rutas no encontradas

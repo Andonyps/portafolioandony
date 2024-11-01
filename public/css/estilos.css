@@ -1,10 +1,5 @@
 /* Estilos generales */
-header {
-    background-color: #354f52;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+
 
 body {
     margin: 0;
@@ -260,41 +255,41 @@ body.page-404 {
     transition: width 0.5s ease;
 }
 
-/* Responsividad */
+/* Responsividad para el botón de menú y el botón de cambio de tema */
 @media (max-width: 768px) {
-    .profile-photo {
-        width: 120px;
-        height: 120px;
+    /* Botón de menú */
+    .menu-button {
+        top: 8px;
+        right: 8px;
+        padding: 6px 8px;
+        font-size: 0.8rem;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
-    }
-
-    #menu {
-        width: 100%;
-        top: 60px; /* Ajuste de posición */
-        right: 0; /* Alineación a la derecha */
-        border-radius: 0; /* Sin bordes redondeados en el menú móvil */
+    /* Botón de cambio de tema */
+    .container {
+        top: 8px;
+        left: 8px;
+        transform: scale(0.6); /* Escala el tamaño para ocupar menos espacio */
     }
 }
 
 @media (max-width: 480px) {
-    .profile-photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    }
-
+    /* Ajustes adicionales para pantallas de teléfonos */
     .menu-button {
-        top: 15px;
-        right: 15px;
-        padding: 8px 12px;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+        top: 5px;
+        right: 5px;
+    }
+
+    .container {
+        top: 5px;
+        left: 5px;
+        transform: scale(0.5); /* Escala más el tamaño en pantallas muy pequeñas */
     }
 }
+
+
 /* Estilos para el modo claro */
 
 

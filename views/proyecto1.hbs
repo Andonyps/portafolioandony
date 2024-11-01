@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    {{> header }} <!-- Incluir el header -->
+    {{> menu }} <!-- Incluir el menú -->
+
+    <main>
+        <section class="project">
+            <h1>Título del Proyecto</h1>
+            <img src="./imagenes/estructuras.png" alt="Imagen del Proyecto" class="project-image"> <!-- Cambia la ruta de la imagen -->
+            <h2>Descripción</h2>
+            <p>
+                Este es un resumen detallado del proyecto. Aquí puedes explicar su propósito, la necesidad que satisface y cualquier otro detalle relevante que los usuarios deberían conocer.
+            </p>
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+            <h2>Enlace al Proyecto</h2>
+            <a href="enlace-al-proyecto" class="project-link">Ver Proyecto</a>
+        </section>
+    </main>
+
+    {{> footer }} <!-- Incluir el footer -->
+    <script src="/js/menu.js"></script>
+</body>
+</html>
