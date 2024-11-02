@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu = document.getElementById('menu');
 
     menuButton.addEventListener('click', function(event) {
-        event.stopPropagation(); // Evitar que el clic en el botón cierre el menú
-        menu.classList.toggle('hidden'); // Alternar la clase 'hidden'
+        event.stopPropagation(); 
+        menu.classList.toggle('hidden'); 
     });
 
     document.addEventListener('click', function() {
         if (!menu.classList.contains('hidden')) {
-            menu.classList.add('hidden'); // Ocultar el menú si se hace clic fuera de él
+            menu.classList.add('hidden'); 
         }
     });
 });

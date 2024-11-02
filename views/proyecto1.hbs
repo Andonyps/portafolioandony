@@ -5,33 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha Técnica del Proyecto</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-    {{> header }} <!-- Incluir el header -->
-    {{> menu }} <!-- Incluir el menú -->
+    {{> header }}
+    {{> menu }} 
 
     <main>
-        <section class="project">
-            <h1>Título del Proyecto</h1>
-            <img src="./imagenes/estructuras.png" alt="Imagen del Proyecto" class="project-image"> <!-- Cambia la ruta de la imagen -->
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Estructuras" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Proyecto con estructuras de datos</h1>
+        </section>
+
+        <section class="project-image-section">
+            <img src="./imagenes/estructuras.png" alt="Imagen del Proyecto" class="project-image"> 
+        </section>
+
+        <section class="project-description">
             <h2>Descripción</h2>
             <p>
-                Este es un resumen detallado del proyecto. Aquí puedes explicar su propósito, la necesidad que satisface y cualquier otro detalle relevante que los usuarios deberían conocer.
+                Este proyecto se trabajo en el curso de Programacion 3 y consisste en recrear algun negocio
+                y dentro de los datos que ingresemos ordenarlos conforme se necesite ya que hay modulo donde 
+                se puede ingresar los datos en forma de pila otros en cola como tambien en formato de arboles 
+                AVL con sus debidos ordenamientos y mostrar el resultado conforme se tiene estipulado
+           
             </p>
+        </section>
+
+        <section class="project-technologies">
             <h2>Tecnologías Utilizadas</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
+                <li>C++</li>
             </ul>
+        </section>
+
+        <section class="project-link-section">
             <h2>Enlace al Proyecto</h2>
-            <a href="enlace-al-proyecto" class="project-link">Ver Proyecto</a>
+            <a href="https://github.com/Andonyps/Estructuras" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/estructura1.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/estructura2.png" alt="Descripción de la imagen 2" class="additional-image">
+                <img src="./imagenes/estructura3.png" alt="Descripción de la imagen 3" class="additional-image">
+                <img src="./imagenes/estructura4.png" alt="Descripcion de la imagen 4" class="additional-image">
+                <img src="./imagenes/Arborl.png" alt="Descripcion de la imagen 5" class="additional-image">
+                            </div>
         </section>
     </main>
-
-    {{> footer }} <!-- Incluir el footer -->
+<p>.</p>
+<p>.</p>
+    {{> footer }} 
     <script src="/js/menu.js"></script>
 </body>
 </html>

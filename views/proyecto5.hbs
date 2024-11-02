@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Formulario.git" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Formulario</h1>
+        </section>
+
+        <section class="project-image-section">
+        </section>
+
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>En este proyecto puse en practica lo que habiamos aprendido en clases ya a nivel de trabajo en este caso 
+            se genero un formulario donde se ingresa informacion la cual ya a sido selecionada y se ingresa al formulario 
+            para que este genere un archivo con estencion .txt cada dato separado por & como lo solicita la IVE y de esa manera 
+            evitar que se realice como normalmente lo hacen que es llenar un excel y realizar estas practicas para enviar informacion 
+           
+            </p>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </section>
+
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/Andonyps/Formulario.git" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+
+            </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }} 
+    <script src="/js/menu.js"></script>
+</body>
+</html>

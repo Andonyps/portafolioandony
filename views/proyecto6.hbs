@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/ajanels/proyecto-etica" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Pagina web principios eticos</h1>
+        </section>
+
+        <section class="project-image-section">
+            <img src="./imagenes/etica.png" alt="Imagen del Proyecto" class="project-image">
+        </section>
+
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>En este proyecto estuvimos trabajando 3 personas esto con el fin de realizar 3 principios cada 1
+                entonces se crea el proyecto y se comparte el repositorio para que podamos hacer los commit y que 
+                trabajemos de una forma colaborativa mas eficiente y se trabajo un carrucel donde muestra los 9 principios
+                y todo lo que conlleva cada principio nos lo muestra al darle click a algun item por lo que nos desplegara la pagina 
+                y cada caracteristica del principio seleccionado            </p>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>GITHUB en forma colaborativa</li>
+            </ul>
+        </section>
+
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/ajanels/proyecto-etica" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/etica.png" alt="Descripción de la imagen 1" class="additional-image">                
+                <img src="./imagenes/etica1.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/etica2.png" alt="Descripción de la imagen 2" class="additional-image">
+                <img src="./imagenes/etica3.png" alt="Descripción de la imagen 3" class="additional-image">
+                
+            </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }}
+    <script src="/js/menu.js"></script>
+</body>
+</html>

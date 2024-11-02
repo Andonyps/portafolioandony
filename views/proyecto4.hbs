@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Infomaquina" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Proyecto de monitoreo de equipo</h1>
+        </section>
+
+        <section class="project-image-section">
+            <img src="./imagenes/infomaquina.png" alt="Imagen del Proyecto" class="project-image"> 
+        </section>
+
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>
+En el curso de sistemas operativos realizamos un programa que nos lea la informacion de nuestro dispodsitivo
+                y lo mostremos de una forma amigable en este caso logramos obtener la informacion acerca de windows como lo es 
+                la version tambien en hardware podemos obtener la informacion que los dispositivos hardware conectados a nuestro equipo 
+                o en si que vienen integradas en la parte interior del equipo tambien en el apartado de software nos muestra que programas
+                tenemos instalados en nuestro ordenador podemos tambien visualizar los procesos y pausarlos de la misma manera y monitor para visualizar 
+                el uso de cpu y memoria de nuestro equipo tambien con netstat ver las conexiones de nuestro equipo
+           
+            </p>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/Andonyps/Infomaquina" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/info1.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/info2png.png" alt="Descripción de la imagen 2" class="additional-image">
+                <img src="./imagenes/info3.png" alt="Descripción de la imagen 3" class="additional-image">
+                <img src="./imagenes/info4.png" alt="Descripcion de la imagen 4" class="additional-image">
+                <img src="./imagenes/info5.png" alt="Descripcion de la imagen 5" class="additional-image">
+            </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }}
+    <script src="/js/menu.js"></script>
+</body>
+</html>

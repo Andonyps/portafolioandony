@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Juego-ajedrez" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Proyecto Juego de ajedrez</h1>
+        </section>
+
+        <section class="project-image-section">
+            <img src="./imagenes/ajedrez.png" alt="Imagen del Proyecto" class="project-image"> 
+        </section>
+
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>
+                Este proyecto se realizo en java y se estuvo utilizando distintos metodos y varias cosas empleadas en el codigo 
+                ya que para mover las piezas debemos de conocer como es que esta permitido en el juego ademas el bot para que pueda moverse
+                y jugar contra quien inicia la partida pues esto tambien se debe de verificar cual es la mejor opcion para moverse o a que 
+                se atacara si sea un peon, un caballo, ,una torre, un alfil o la reina ya que cada uno tiene distinta puntuacion y este decidira 
+                cual es mas conveniente atacar.   
+            </p>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>JAVA</li>
+            </ul>
+        </section>
+
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/Andonyps/Juego-ajedrez" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/ajedrez1.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/ajedrez2.png" alt="Descripción de la imagen 2" class="additional-image">
+                <img src="./imagenes/ajedrez3.png" alt="Descripción de la imagen 3" class="additional-image">
+                <img src="./imagenes/ajedrez4.png" alt="Descripcion de la imagen 4" class="additional-image">
+                             </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }} 
+    <script src="/js/menu.js"></script>
+</body>
+</html>

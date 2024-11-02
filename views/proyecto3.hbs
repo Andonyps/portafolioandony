@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Compilador" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        <section class="project-title">
+            <h1>Compilador</h1>
+        </section>
+
+        <section class="project-image-section">
+            <img src="./imagenes/compilador.png" alt="Imagen del Proyecto" class="project-image">
+        </section>
+
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>
+Este proyecto realiza una lectura de todo el codigo que le hayamos ingresado para verificar la sintaxis, la semantica 
+                lo que realiza es verificar todo el codigo y devolvernos los tokens generados por estos para mostrarlos y mostrarnos los 
+                errores encontrados y el codigo objeto o resultante 
+                       
+            </p>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>JAVA</li>
+            </ul>
+        </section>
+
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/Andonyps/Compilador" class="project-link">Ver Proyecto</a>
+        </section>
+
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/compilador.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/compilado.png" alt="Descripción de la imagen 2" class="additional-image">
+
+                
+            </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }}
+    <script src="/js/menu.js"></script>
+</body>
+</html>

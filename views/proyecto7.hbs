@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica del Proyecto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    {{> header }} 
+    {{> menu }} 
+
+    <main>
+       
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Regresar</button>
+            <a href="https://github.com/Andonyps/Andonyps.github.io-calculo" class="repo-button">Ir al Repositorio</a>
+        </div>
+
+        
+        <section class="project-title">
+            <h1>Proyecto calculo de jubilacion</h1>
+        </section>
+
+       
+        <section class="project-image-section">
+            <img src="./imagenes/Formularioinformacion.png" alt="Imagen del Proyecto" class="project-image"> 
+        </section>
+
+        
+        <section class="project-description">
+            <h2>Descripción</h2>
+            <p>
+            Con este proyecto se inicio la realizacion de aplicaciones web con javascript dando funcionalidad a la pagina 
+            desde realizar calculos hasta poder generar un documento el cual nos muestra toda la informacion de la persona 
+            el dinero a recibir por jubilacion tambien valida el tiempo si es apto para recibir la indemnizacion o no lo es 
+           
+            </p>
+        </section>
+
+       
+        <section class="project-technologies">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+               
+            </ul>
+        </section>
+
+      
+        <section class="project-link-section">
+            <h2>Enlace al Proyecto</h2>
+            <a href="https://github.com/Andonyps/Andonyps.github.io-calculo" class="project-link">Ver Proyecto</a>
+        </section>
+
+       
+        <section class="additional-images">
+            <h2>Imágenes Adicionales</h2>
+            <div class="image-gallery">
+                <img src="./imagenes/form1.png" alt="Descripción de la imagen 1" class="additional-image">
+                <img src="./imagenes/form2.png" alt="Descripción de la imagen 2" class="additional-image">
+                <img src="./imagenes/form3.png" alt="Descripción de la imagen 3" class="additional-image">
+                <img src="./imagenes/form4.png" alt="Descripcion de la imagen 4" class="additional-image">
+               
+            </div>
+        </section>
+    </main>
+<p>.</p>
+<p>.</p>
+    {{> footer }}
+    <script src="/js/menu.js"></script>
+</body>
+</html>

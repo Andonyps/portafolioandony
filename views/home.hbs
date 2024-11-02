@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{titulo}} {{nombre}}</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-    {{> header }} <!-- Incluir el header -->
+    {{> header }} 
    <div class="container">
         <input type="checkbox" id="checkbox">
         <label class="label" for="checkbox"></label>
@@ -15,25 +16,23 @@
 
     
 
-    {{> menu }} <!-- Incluir el menú -->
+    {{> menu }} 
 
 
     <main>
-        <!-- Bienvenida -->
         <section class="profile">
             <img src="./imagenes/yo.jpg" alt="Foto de Brenton Andony" class="profile-photo">
         </section>
 
         <section class="intro">
             <h1>¡Bienvenido!</h1>
-            <p>Mi nombre es Brenton Andony Manuel Par Sohon</p>
+            <p>Mi nombre es Brenton Andony Manuel Par Sohon de 22 Años</p>
             <p>Estudiante de Ingeniería en Sistemas de Información y Ciencias de la Computación</p>
+            <p>Con ganas de seguir aprendiendo y estar siempre al tanto de lo nuevo en Tecnologia</p>
         </section>
 
-        <!-- Foto de Perfil -->
         
 
-        <!-- Habilidades -->
         <section class="skills">
            
         
@@ -91,7 +90,7 @@
         <div class="skill-bar">
             <p>Node.js</p>
             <div class="bar">
-                <div class="progress" style="width: 10%;">50%</div>
+                <div class="progress" style="width: 50%;">50%</div>
             </div>
         </div>
     </div>
@@ -99,7 +98,6 @@
 
         </section>
 
-        <!-- Experiencia Laboral -->
         <section class="experience">
             <h2>Experiencia Laboral</h2>
             <div class="job">
@@ -111,12 +109,11 @@
                     <li>Supervision de bases de datos</li>
                     <li>Cableado Estructurado</li>
                     <li>Realizar tareas de mantenimiento preventivo, como actualizaciones de software y hardware.</li>
-                    <!-- Más detalles aquí -->
+           
                 </ul>
                 <p>Duración: Noviembre 2022 - Abril 2024</p>
             </div>
-            <!-- Agrega más experiencias si las tienes -->
-        </section>
+                   </section>
         <section class="experience">
             <div class="job">
                 <h3>Encargado area de informatica</h3>
@@ -130,15 +127,19 @@
                     <li>Administracion de los Servidores locales de la cooperativa</li>
                     <li>Generar reporteria para las distintas areas</li>
                     <li>Capacitar al personal sobre uso de software y hardware empleado en la cooperativa</li>
-                    <!-- Más detalles aquí -->
                 </ul>
                 <p>Duración: Mayo 2024 - Actualidad</p>
+                <p>.    </p>
+                <p>.    </p>
+
             </div>
-            <!-- Agrega más experiencias si las tienes -->
+            
         </section>
     </main>
-
-    {{> footer }} <!-- Incluir el footer -->
+    <p> </p>
+<p> </p>
+<p> </p>
+    {{> footer }}
     <script src="/js/menu.js"></script>
     <script>
     const checkbox = document.getElementById('checkbox');
